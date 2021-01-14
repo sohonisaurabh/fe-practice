@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive star rating component</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section>
+      <img src="./mockup.png" alt="Mockup for star rating" />
+    </section>
+    <main>
+      <!-- Naive implementation which will not be accessible -->
+      <!-- <div>
+        <ul class="star-rating-wrapper">
+          <li class="star selected"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+        </ul>
+      </div> -->
+
+      <!-- Accessible implementation -->
+      <form href="#" id="star-rating-form">
+        <div class="star-rating-wrapper">
+          <input
+            type="radio"
+            name="rating"
+            value="0"
+            checked
+            class="select-radio visually-hidden"
+            id="rating-0-star"
+          />
+          <label for="rating-0-star" class="visually-hidden">
+            <span>0 stars</span>
+          </label>
+
+          <input
+            type="radio"
+            name="rating"
+            value="1"
+            class="select-radio visually-hidden"
+            id="rating-1-star"
+          />
+          <label for="rating-1-star">
+            <span class="visually-hidden">1 stars</span>
+            <svg viewBox="0 0 512 512" class="select-rating">
+              <path
+                d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"
+              ></path>
+            </svg>
+          </label>
+
+          <input
+            type="radio"
+            name="rating"
+            value="2"
+            class="select-radio visually-hidden"
+            id="rating-2-star"
+          />
+          <label for="rating-2-star">
+            <span class="visually-hidden">2 stars</span>
+            <svg viewBox="0 0 512 512" class="select-rating">
+              <path
+                d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"
+              ></path>
+            </svg>
+          </label>
+
+          <input
+            type="radio"
+            name="rating"
+            value="3"
+            class="select-radio visually-hidden"
+            id="rating-3-star"
+          />
+          <label for="rating-3-star">
+            <span class="visually-hidden">3 stars</span>
+            <svg viewBox="0 0 512 512" class="select-rating">
+              <path
+                d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"
+              ></path>
+            </svg>
+          </label>
+
+          <input
+            type="radio"
+            name="rating"
+            value="4"
+            class="select-radio visually-hidden"
+            id="rating-4-star"
+          />
+          <label for="rating-4-star">
+            <span class="visually-hidden">4 stars</span>
+            <svg viewBox="0 0 512 512" class="select-rating">
+              <path
+                d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"
+              ></path>
+            </svg>
+          </label>
+
+          <input
+            type="radio"
+            name="rating"
+            value="5"
+            class="select-radio visually-hidden"
+            id="rating-5-star"
+          />
+          <label for="rating-5-star">
+            <span class="visually-hidden">5 stars</span>
+            <svg viewBox="0 0 512 512" class="select-rating">
+              <path
+                d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"
+              ></path>
+            </svg>
+          </label>
+
+          <span class="focus-ring"></span>
+        </div>
+        <button type="submit" id="submit-rating">Submit rating</button>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

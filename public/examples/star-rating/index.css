@@ -1,0 +1,91 @@
+body {
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  margin-right: -100px;
+  opacity: 0;
+}
+
+svg {
+  width: 5em;
+  height: 5em;
+  fill: yellow;
+  stroke: yellow;
+}
+
+.star-rating-wrapper {
+  position: relative;
+  width: 260px;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.focus-ring {
+  border: 2px solid blue;
+  opacity: 0;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.select-radio:focus ~ label svg {
+  fill: lightgoldenrodyellow;
+  stroke: lightgoldenrodyellow;
+}
+
+.select-radio:checked ~ label svg {
+  fill: lightgoldenrodyellow;
+  stroke: lightgoldenrodyellow;
+}
+
+.select-radio:checked + label svg {
+  fill: yellow;
+  stroke: yellow;
+}
+
+.select-radio:focus + label svg {
+  fill: yellow;
+  stroke: yellow;
+}
+
+.select-radio:focus + label {
+  outline: blue solid 2px;
+}
+
+.star-rating-wrapper label:hover ~ label svg {
+  fill: lightgoldenrodyellow;
+  stroke: lightgoldenrodyellow;
+}
+
+#rating-0-star:focus ~ .focus-ring {
+  opacity: 1;
+}
+
+.star-rating-wrapper:hover > label svg {
+  fill: yellow;
+  stroke: yellow;
+}
+
+#star-rating-form {
+  width: 260px;
+}
+
+#submit-rating {
+  display: block;
+  margin: 20px auto;
+}
