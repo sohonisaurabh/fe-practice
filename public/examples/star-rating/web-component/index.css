@@ -1,0 +1,12 @@
+body {
+  font-size: 10px;
+}
+
+.star-rating-wrapper {
+  position: relative;
+  width: 270px;
+}
+
+.submit-rating {
+  margin: 20px 4em;
+}
