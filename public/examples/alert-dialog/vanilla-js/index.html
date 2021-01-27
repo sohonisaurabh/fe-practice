@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alert Dialog Component</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section role="banner">
+      <h1>Alert dialog vanilla JS component</h1>
+      <img src="./mockup.png" alt="Alert dialog mockup" class="mockup" />
+    </section>
+    <main>
+        <button class="open-dialog-btn">Open dialog</button>
+    </main>
+
+    <div role="dialog" class="dialog-wrapper hidden" aria-labelledby="dialogTitle">
+      <div class="overlay"></div>
+      <section class="dialog-content">
+        <section>
+          <h2 id="dialogTitle">Dialog title</h2>
+        </section>
+        <section class="dialog-body">
+          <p>Dialog message</p>
+        </section>
+        <button class="close-dialog-btn">Close</button>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
